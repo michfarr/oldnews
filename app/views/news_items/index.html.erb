@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>News!</h1>
-<%= @news_items.each do |news_item| %>
+<% @news_items.each do |news_item| %>
   <a href="<%= news_item_path news_item%>" class="summary">
     <%= image_tag(news_item.image.thumbnail.url, :class => "thumbnail inline") %>
     <h2><%= news_item.title %></h2>
